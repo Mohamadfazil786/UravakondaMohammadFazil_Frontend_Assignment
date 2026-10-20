@@ -1,0 +1,13 @@
+Opportunity_ID,Provider,Product,Interest_Rate,Minimum_Amount_INR,Maximum_Amount_INR,Tenure_Months,LTV,Processing_Fee,Risk_Profile
+OPP-1001,Apex Finance,LAS,9.25%,200000,5000000,12-36,50%,0.50%,Moderate
+OPP-1002,Bharat Capital,LAS,9.75%,500000,7500000,12-48,55%,0.75%,Moderate
+OPP-1003,Crescent Wealth,LAS,10.10%,300000,2500000,6-24,45%,0.50%,Moderately High
+OPP-1004,Delta Securities,LAS,9.50%,100000,3000000,12-36,50%,0.40%,Moderate
+OPP-1005,Evergreen Finance,LAS,10.25%,250000,4000000,18-36,45%,1.00%,Moderately High
+OPP-1006,FinEdge Capital,LAS,9.40%,500000,10000000,12-60,50%,0.50%,Moderate
+OPP-1007,GrowthBridge,LAS,10.50%,200000,2000000,6-24,40%,0.50%,High
+OPP-1008,Harbor Wealth,LAS,9.60%,300000,6000000,12-36,52%,0.60%,Moderate
+OPP-1009,Indus Finance,LAS,9.90%,150000,3500000,12-48,48%,0.50%,Moderate
+OPP-1010,Jade Financial,LAS,10.00%,200000,4500000,24-48,50%,0.75%,Moderately High
+OPP-1011,Kite Capital,LAS,9.35%,500000,8000000,12-36,55%,0.50%,Moderate
+OPP-1012,Lotus Finance,LAS,10.75%,100000,1500000,6-18,40%,0.25%,High

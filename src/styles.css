@@ -1,0 +1,403 @@
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0b1220;
+  background: #f3f6fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #edf3ff 0%, #f7f9fc 100%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.topbar {
+  padding: 2rem 1.5rem 1rem;
+  background: #0f172a;
+  color: #fff;
+}
+
+.topbar > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  color: #9bb5ff;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 2vw, 2.4rem);
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #dfe7f5;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  padding: 1.25rem;
+}
+
+.filter-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.filter-form label,
+.sort-box {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: #1f2a37;
+}
+
+label input,
+label select,
+.sort-box select {
+  width: 100%;
+  border: 1px solid #ccd9ee;
+  border-radius: 12px;
+  padding: 0.72rem 0.8rem;
+  background: #fff;
+}
+
+.inline-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.primary-button,
+.secondary-button,
+.selected-button,
+.close-button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: #fff;
+}
+
+.secondary-button {
+  background: #e8eefc;
+  color: #1a2a4a;
+}
+
+.selected-button {
+  background: #0ea5a4;
+  color: white;
+}
+
+.close-button {
+  background: transparent;
+  color: #334155;
+  font-size: 1.25rem;
+}
+
+.list-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.list-header h2,
+.form-panel h2 {
+  margin: 0;
+}
+
+.sort-box {
+  min-width: 170px;
+}
+
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #e5ebf5;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card-provider {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.pill {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.metrics div {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.metrics span,
+.card-row span {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.metrics strong,
+.card-row strong {
+  font-size: 0.85rem;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid #edf2f7;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.card-actions button {
+  flex: 1 1 120px;
+}
+
+.comparison-box {
+  background: #f8fbff;
+  border: 1px solid #dfeaf8;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.comparison-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.comparison-title-row h3 {
+  margin: 0;
+}
+
+.mini-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.state-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.2rem;
+  background: #f8fafc;
+}
+
+.empty-card h3,
+.error-card p {
+  margin-top: 0;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.skeleton-card {
+  height: 250px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #ecf0f8 25%, #f7f9fc 50%, #ecf0f8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  z-index: 20;
+}
+
+.modal-card {
+  width: min(900px, 100%);
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.eligibility-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.eligibility-result {
+  margin-top: 1rem;
+}
+
+.eligibility-result h4 {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.eligibility-result.eligible {
+  color: #166534;
+}
+
+.eligibility-result.conditional {
+  color: #9a6700;
+}
+
+.eligibility-result.not_eligible {
+  color: #991b1b;
+}
+
+.eligibility-result ul {
+  margin: 0 0 0.75rem;
+  padding-left: 1.2rem;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.compare-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.compare-item h4,
+.compare-item p {
+  margin-top: 0;
+}
+
+.compare-item ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .list-header,
+  .comparison-title-row,
+  .detail-grid {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
